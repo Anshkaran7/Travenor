@@ -10,6 +10,9 @@ import React from "react"; // Make sure to import React
 import 'react-native-gesture-handler'
 import Home from "../../screens/Travenor/Home";
 import Login from "../../screens/login/login";
+import Register from "../../screens/login/register";
+import ForgotPassword from "../../screens/login/forgetPassword";
+import OtpScreen from "../../screens/login/OtpScreen";
 
 const Stack = createStackNavigator();
 
@@ -32,6 +35,21 @@ export default function StackNavigator() {
           options={{ headerShown: false }}
           name="Login"
           component={Login}  
+        />
+        <Stack.Screen
+        options={{ headerShown: false }}
+        name="Register"
+        component={Register}
+        />
+        <Stack.Screen
+        options={{headerShown:false}}
+        name="ForgotPassword"
+        component={ForgotPassword}
+        />
+        <Stack.Screen
+        options={{headerShown:false}}
+        name="OtpScreen"
+        component={OtpScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
