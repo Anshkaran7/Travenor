@@ -63,7 +63,7 @@ interface Styles {
 
 export const Styles: Styles = StyleSheet.create({
   shadow: {
-    shadowColor: "#000",
+    shadowColor: "#7D848D",
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.1,
     shadowRadius: 5,

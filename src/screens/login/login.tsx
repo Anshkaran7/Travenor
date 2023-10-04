@@ -56,6 +56,11 @@ const Login = () => {
         navigation.navigate('ForgotPassword' as never)
     };
 
+    const handleSignIn = () => {
+        navigation.navigate('BottomTab' as never)
+    }
+    
+
     return (
         <KeyboardAvoidingView
             style={{ flex: 1 }}
@@ -113,11 +118,11 @@ const Login = () => {
                             </View>
                             <View style={{ marginTop: 10, alignItems: 'flex-end', width: 300 }}>
                                 <TouchableOpacity onPress={handleForgot}>
-                                    <Text style={[Styles.mdText, { color: '#0D6EFD' }]}>Forgot password?</Text>
+                                    <Text style={[Styles.smText, { color: '#0D6EFD' }]}>Forgot password?</Text>
                                 </TouchableOpacity>
                             </View>
 
-                            <TouchableOpacity style={{
+                            <TouchableOpacity onPress={handleSignIn} style={{
                                 backgroundColor: '#0D6EFD',
                                 width: 300,
                                 marginTop: 20,

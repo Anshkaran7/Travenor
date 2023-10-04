@@ -1,6 +1,5 @@
-import { View, Text, TouchableOpacity, Image, SafeAreaView, Platform } from "react-native";
+import { View, Text, TouchableOpacity, Platform } from "react-native";
 import React, { useState } from "react";
-// import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Styles } from "../constants/Styles";
