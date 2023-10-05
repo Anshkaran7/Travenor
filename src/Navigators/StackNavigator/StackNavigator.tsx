@@ -17,6 +17,7 @@ import BottomTabNavigator from "../Bottom/BottomTab";
 import MainHome from "../../screens/Travenor/MainHome";
 import Calendar from "../../screens/Travenor/Calendar";
 import Profile from "../../screens/Travenor/Profile";
+import ProfileScreen from "../../screens/Travenor/ProfileScreen";
 
 const Stack = createStackNavigator();
 
@@ -25,7 +26,7 @@ export default function StackNavigator() {
     <NavigationContainer>
       <StatusBar style="light" backgroundColor="#0D6EFD" /> 
       <Stack.Navigator
-        initialRouteName="BottomTab"
+        initialRouteName="ProfileScreen"
         screenOptions={{
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
         }}
@@ -62,7 +63,8 @@ export default function StackNavigator() {
         />
 
         <Stack.Screen options={{ headerShown: false }} name="Profile" component={Profile} />
-      
+        <Stack.Screen options={{ headerShown: false }} name="ProfileScreen" component={ProfileScreen} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
