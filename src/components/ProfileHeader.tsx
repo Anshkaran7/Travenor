@@ -20,7 +20,7 @@ type ProfileHeaderProps = {
   
     const handleEditPress = () => {
         setEditing(!editing);
-        onEditPress(); // Call the provided onEditPress callback
+        onEditPress(); 
       };
 
     return (

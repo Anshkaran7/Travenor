@@ -14,10 +14,9 @@ import Register from "../../screens/login/register";
 import ForgotPassword from "../../screens/login/forgetPassword";
 import OtpScreen from "../../screens/login/OtpScreen";
 import BottomTabNavigator from "../Bottom/BottomTab";
-import MainHome from "../../screens/Travenor/MainHome";
-import Calendar from "../../screens/Travenor/Calendar";
 import Profile from "../../screens/Travenor/Profile";
 import ProfileScreen from "../../screens/Travenor/ProfileScreen";
+import Message from "../../screens/Travenor/Message";
 
 const Stack = createStackNavigator();
 
@@ -26,7 +25,7 @@ export default function StackNavigator() {
     <NavigationContainer>
       <StatusBar style="light" backgroundColor="#0D6EFD" /> 
       <Stack.Navigator
-        initialRouteName="ProfileScreen"
+        initialRouteName="HomeScreen"
         screenOptions={{
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
         }}
@@ -62,8 +61,9 @@ export default function StackNavigator() {
         component={BottomTabNavigator}
         />
 
-        <Stack.Screen options={{ headerShown: false }} name="Profile" component={Profile} />
+        
         <Stack.Screen options={{ headerShown: false }} name="ProfileScreen" component={ProfileScreen} />
+       
 
       </Stack.Navigator>
     </NavigationContainer>

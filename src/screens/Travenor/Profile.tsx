@@ -6,6 +6,7 @@ import ProfileHeader from '../../components/ProfileHeader';
 import ProfileOptions from '../../components/ProfileOptions';
 import OptionItem from '../../components/ProfileOptions';
 import { useNavigation } from '@react-navigation/native';
+import Navbar from '../../components/Navbar';
 
 type Option = {
     title: string;
@@ -45,7 +46,7 @@ const Profile = () => {
     return (
         <View style={styles.container}>
             <ScrollView>
-                <ProfileHeader title="Profile" />
+                <Navbar title="Profile" />
                 <View style={styles.main}>
                     <Image style={{ width: 100, height: 100, borderRadius: 100, alignSelf: "center" }} source={require("../../../assets/images/profile.png")} />
                     <Text style={[Styles.mdSemiBold, { color: '#1B1E28', fontSize: 20, alignSelf: "center", marginTop: 15 }]}>

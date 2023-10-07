@@ -1,0 +1,80 @@
+[
+    {
+        "id":1,
+        "name":"Ansh Karan",
+        "lastMessage":"Hey, I am coming to your place",
+        "lastMessageTime":"12:00 PM",
+        "image":"../../../assets/images/chat/chat1.png",
+        "status":"online",
+        "message_Read":false
+    },
+    {
+        "id":2,
+        "name":"Jhon Doe",
+        "lastMessage":"Hey, I am coming to your place",
+        "lastMessageTime":"12:00 PM",
+        "image":"../../../assets/images/chat/chat2.png",
+        "status":"offline",
+        "message_Read":true
+    
+    },
+    {
+        "id":3,
+        "name":"Domnic Brown",
+        "lastMessage":"Hey, I am coming to your place",
+        "lastMessageTime":"12:00 PM",
+        "image":"../../../assets/images/chat/chat3.png",
+        "status":"online",
+        "message_Read":true
+    },
+    {
+        "id":4,
+        "name":"Domnic Harris",
+        "lastMessage":"Hey, I am coming to your place",
+        "lastMessageTime":"Yesterday",
+        "image":"../../../assets/images/chat/chat1.png",
+        "status":"offline",
+        "message_Read":true
+    },
+    {
+        "id":5,
+        "name":"Garry Sobars",
+        "lastMessage":"Hey, I am coming to your place",
+        "lastMessageTime":"12:00 PM",
+        "image":"../../../assets/images/chat/chat3.png",
+        "status":"online",
+        "message_Read":true
+    },
+    {
+        "id":6,
+        "name":"Jhon Smith",
+        "lastMessage":"Hey, I am coming to your place",
+        "lastMessageTime":"12:00 PM",
+        "image":"../../../assets/images/chat/chat2.png",
+        "status":"offline",
+        "message_Read":true
+    },
+
+    {
+        "id":7,
+        "name":"Domnic Brown",
+        "lastMessage":"Hey, I am coming to your place",
+        "lastMessageTime":"12:00 PM",
+        "image":"../../../assets/images/chat/chat1.png",
+        "status":"online",
+        "message_Read":true
+
+    },
+    {
+        "id":8,
+        "name":"Ansh Karan",
+        "lastMessage":"Hey, I am coming to your place",
+        "lastMessageTime":"12:00 PM",
+        "image":"../../../assets/images/chat/chat1.png",
+        "status":"online",
+        "message_Read":true
+
+    }
+
+
+]
