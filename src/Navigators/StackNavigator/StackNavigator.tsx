@@ -17,6 +17,7 @@ import BottomTabNavigator from "../Bottom/BottomTab";
 import Profile from "../../screens/Travenor/Profile";
 import ProfileScreen from "../../screens/Travenor/ProfileScreen";
 import Message from "../../screens/Travenor/Message";
+import Chat from "../../screens/Travenor/Chat";
 
 const Stack = createStackNavigator();
 
@@ -63,6 +64,8 @@ export default function StackNavigator() {
 
         
         <Stack.Screen options={{ headerShown: false }} name="ProfileScreen" component={ProfileScreen} />
+        <Stack.Screen options={{ headerShown: false }} name="Chat" component={Chat} />
+
        
 
       </Stack.Navigator>

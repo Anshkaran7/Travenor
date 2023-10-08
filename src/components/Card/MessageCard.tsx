@@ -2,7 +2,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { useState } from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { Styles } from "../../constants/Styles";
-
+import { useNavigation } from "@react-navigation/native";
 
 interface MessageCardProps {
   data: {
@@ -40,8 +40,14 @@ export const MessageCard = ({ data, onDelete, onSelect, isSelected }: MessageCar
     onSelect(data.id);
   };
 
+  const navigation = useNavigation();
+
+  const handleChat = () => {
+    navigation.navigate("Chat" as never);
+  };
+
   return (
-    <View style={{ flexDirection: 'row', alignItems: 'center', width: '87%', gap: 34, marginHorizontal: 20, padding: 6 }}>
+    <TouchableOpacity onPress={handleChat} style={{ flexDirection: 'row', alignItems: 'center', width: '87%', gap: 34, marginHorizontal: 20, padding: 6 }}>
       <View style={{ width: 14 }}>
         <Image
           source={require("../../../assets/images/chat/chat1.png")}
@@ -75,6 +81,6 @@ export const MessageCard = ({ data, onDelete, onSelect, isSelected }: MessageCar
           <Text style={[Styles.smText, statusTextStyle]}>{data.status}</Text>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
