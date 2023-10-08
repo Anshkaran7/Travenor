@@ -55,6 +55,7 @@ const UserChat = () => {
             behavior={Platform.OS === "ios" ? "padding" : "height"}
         >
             <ChatHeader title={title} label="Online" />
+            <View style={{borderBottomWidth:1, borderBottomColor:'#e0e0e0', marginVertical:6}}></View>
             <View style={{ flex: 1, paddingHorizontal: 16, justifyContent: "flex-end", }}>
                 <FlatList
                     ref={flatListRef}
@@ -84,12 +85,15 @@ const UserChat = () => {
                             borderTopRightRadius: 10,
                             borderBottomRightRadius: isOtherMessage ? (index === messages.length - 0 ? 0 : 10) : 0,
                         };
-
+                        
                         return (
                             <View style={{ flexDirection: 'row', alignSelf: isUserMessage ? "flex-end" : "flex-start" }}>
+                                <View style={{ width: 41 }}>
                                 {showImage && (
                                     <Image source={require('../../../assets/images/chat/chat1.png')} style={{ width: 40, height: 40, borderRadius: 20, marginTop: 5, marginRight: 5, alignSelf: isUserMessage ? "flex-end" : "flex-start" }} />
                                 )}
+
+                                </View>
                                 <View
                                     style={[
                                         {

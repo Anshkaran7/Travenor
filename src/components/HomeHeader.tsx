@@ -26,7 +26,7 @@ const HomeHeader = () => {
                 alignItems: "center",
                 justifyContent: "space-between",
                 paddingHorizontal: 15,
-               marginTop: 10,
+               marginTop: 5,
 
             }}
         >
@@ -47,7 +47,9 @@ const HomeHeader = () => {
                 <Image source={data.Image} style={{ width: 30, height: 30 }} />
                 <Text style={[Styles.mdSemiBold, { color: "#1B1E28" }]}>{data.name}  </Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("Notification" as never)}>
             <FontAwesome name="bell-o" size={24} color="#1B1E28" />
+            </TouchableOpacity>
         </View>
     );
 };
