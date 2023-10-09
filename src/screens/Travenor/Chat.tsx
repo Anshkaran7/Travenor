@@ -105,7 +105,7 @@ const UserChat = () => {
                                         borderRadiusStyle
                                     ]}
                                 >
-                                    <Text style={{ color: "black" }}>
+                                    <Text style={[Styles.mdText,{ color: "black" }]}>
                                         {item.text}
                                     </Text>
                                 </View>
