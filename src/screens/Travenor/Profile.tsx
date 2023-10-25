@@ -49,7 +49,7 @@ const Profile = () => {
                 <Navbar title="Profile" />
                 <View style={styles.main}>
                     <Image style={{ width: 100, height: 100, borderRadius: 100, alignSelf: "center" }} source={require("../../../assets/images/profile.png")} />
-                    <Text style={[Styles.mdSemiBold, { color: '#1B1E28', fontSize: 20, alignSelf: "center", marginTop: 15 }]}>
+                    <Text style={[Styles.mdSemiBold, { color: '#1B1E28', fontSize: 18, alignSelf: "center", marginTop: 15 }]}>
                         {data.name}
                     </Text>
                     <Text style={[Styles.smText, { color: '#7D848D', alignSelf: "center" }]}>

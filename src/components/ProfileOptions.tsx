@@ -16,8 +16,8 @@ const OptionItem = ({ title, icon, onPress }: OptionItemProps) => (
     onPress={onPress}
     style={{
       borderColor: "#7D848D",
-      borderWidth: 0.5,
-      borderRadius: 12,
+      borderWidth: 0.3,
+      borderRadius: 10,
       flexDirection: "row",
       alignItems: "center",
       paddingHorizontal: 8,
@@ -29,12 +29,12 @@ const OptionItem = ({ title, icon, onPress }: OptionItemProps) => (
     }}
   >
     <View style={{ flexDirection: "row", alignItems: "center", marginLeft: 10, gap: 10 }}>
-      <FontAwesome name={icon} size={24} color="#7D848D" />
-      <Text style={[Styles.mdSemiBold, { color: "#1B1E28", fontSize: 16, marginLeft: 5 }]}>
+      <FontAwesome name={icon} size={20} color="#7D848D" />
+      <Text style={[Styles.mdText, { color: "#1B1E28", fontSize: 14, marginLeft: 5 }]}>
         {title}
       </Text>
     </View>
-    <FontAwesome name="chevron-right" size={16} color="#7D848D" />
+    <FontAwesome name="chevron-right" size={12}  color="#7D848D" />
   </TouchableOpacity>
 );
 
