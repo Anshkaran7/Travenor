@@ -15,7 +15,6 @@ import {
 } from '@expo-google-fonts/poppins';
 import StackNavigator from './src/Navigators/StackNavigator/StackNavigator';
 
-
 export default function App() {
 
   let [fontsLoaded] = useFonts({
