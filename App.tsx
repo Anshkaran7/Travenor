@@ -16,7 +16,6 @@ import {
 import StackNavigator from './src/Navigators/StackNavigator/StackNavigator';
 
 export default function App() {
-
   let [fontsLoaded] = useFonts({
     Poppins_100Thin,
     Poppins_200ExtraLight,
