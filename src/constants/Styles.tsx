@@ -23,6 +23,7 @@ interface Styles {
     fontSize: number;
     fontFamily: string;
   };
+  
   mdText: {
     color: string;
     fontSize: number;
